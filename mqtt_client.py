@@ -1,3 +1,7 @@
+"""
+mqtt class used for interacting with mqtt brokers.
+"""
+
 import paho.mqtt.client as mqtt
 import time
 import os

@@ -1,3 +1,10 @@
+"""
+This script will connect to an mqtt broker and publish a message.
+The message contains the hostname of the sender and the time when the message was sent.
+The same type of message will be sent multiple times (MSG_COUNT) at a regular interval (WAIT_TIME).
+A tag (CLIENT_TYPE) is added at the end of each message to identify the publisher type: PUBLISHER/SUBSCRIBER.
+"""
+
 from mqtt_client import MyMQTTClass
 from random import randrange
 import time
