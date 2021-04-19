@@ -112,7 +112,7 @@ class MyMQTTClass:
         for subscriber,latencies in self._latencies.items():
             min_latency = min(latencies)
             max_latency = max(latencies)
-            avg_latency = sum(latencies)/len(latencies)
+            avg_latency = round(sum(latencies)/len(latencies), self._latency_float_digits)
             print(f'{subscriber} latency results - min:{min_latency}s max:{max_latency}s avg:{avg_latency}s')
 
     def __del__(self):

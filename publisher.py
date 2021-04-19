@@ -5,12 +5,12 @@ import time
 if __name__ == "__main__":
     
     # define variables
-    rand_number = randrange(1000)
-    CLIENT_NAME = f'Publisher-{rand_number}'
-    CLIENT_TYPE = 'PUBLISHER'
+    MSG_COUNT = 50   # number of messages to publish
     WAIT_TIME = 1   # wait time between messages
-    MSG_COUNT = 500   # number of messages to send
-
+    CLIENT_TYPE = 'PUBLISHER'   # used as tag in mqtt messages to identofy publisher/subscriber messages
+    RAND_NUMBER = randrange(1000)
+    CLIENT_NAME = f'Publisher-{RAND_NUMBER}'
+    
     # publish messages on mqtt topic
     try:
         mqttc = MyMQTTClass(mqtt_client_name=CLIENT_NAME, logging=True)
