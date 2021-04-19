@@ -15,6 +15,9 @@ source .env/bin/activate
 
 # install pip packages
 pip install -r requirements.txt
+
+# deactivate python env after running the publisher/subscriber scripts
+deactivate
 ```
 
 ## Publish messages to mqtt topic
