@@ -6,7 +6,7 @@ the subscriber sends a response message that includes the information from the
 original message, and the identifier of the receiving device and a timestamp for when the
 message was received. Responses are sent immediately.
 
-The subscriber only listens to the subscibed channel for a predetermined amount of time (SUBSCRIBE_DURATION).
+The subscriber only listens to the subscribed channel for a predetermined amount of time (SUBSCRIBE_DURATION).
 When done listening, for each pair of publishers observed, the minimum, maximum,
 and average (mean) latency is calculated and displayed.
 """
